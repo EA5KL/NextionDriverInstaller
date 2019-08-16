@@ -1,7 +1,7 @@
 NextionDriver Installer and Checker
 ===================================
 
-This is installer version 1.03 ( 09 feb 2019 )
+This is installer version 1.04 ( 16 aug 2019 )
 
 This repository brings you 3 helper programs for the installation of
 NextionDriver when you do not want to do it by hand:
@@ -61,7 +61,7 @@ cd /tmp
 
 get the software
 ```
-git clone https://github.com/on7lds/NextionDriverInstaller.git
+git clone https://github.com/ElGamal/NextionDriverInstaller.git
 ```
 
 go !
