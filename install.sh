@@ -3,9 +3,9 @@
 #                                                       #
 #                 NextionDriver installer               #
 #                                                       #
-#                 (c)2018-2019 by ON7LDS                #
+#              (c)2018-2019 by ON7LDS & EA5KL           #
 #                                                       #
-#                        V1.03                          #
+#                        V1.04                          #
 #                                                       #
 #########################################################
 
@@ -80,6 +80,9 @@ helpfiles () {
     echo "+ Copying groups and users files"
     cp $DIR/groups.txt $FILESDIR
     cp $DIR/stripped.csv $FILESDIR
+#    rm -f /var/www/dashboard/mmdvmhost/lh_nextion.php
+#    echo "+ Copying last heard code"
+#    cp %DIR/lh_nextion.php /var/www/dashboard/mmdvmhost
 }
 herstart () {
     echo -e "\n+ To test if it all works as expected,"
