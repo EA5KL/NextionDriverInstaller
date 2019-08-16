@@ -79,11 +79,11 @@ helpfiles () {
     rm -f /etc/groups.txt
     rm -f /etc/stripped.csv
     echo "+ Copying groups and users files"
-    cp $DIR/groups.txt $FILESDIR
-    cp $DIR/stripped.csv $FILESDIR
+    cp /tmp/NextionDriver/groups.txt $FILESDIR
+    cp /tmp/NextionDriver/stripped.csv $FILESDIR
     rm -f /var/www/dashboard/mmdvmhost/lh_nextion.php
     echo "+ Copying last heard code"
-    cp %DIR/lh_nextion.php $FILESDIRPHP
+    cp /tmp/NextionDriver/lh_nextion.php $FILESDIRPHP
 }
 herstart () {
     echo -e "\n+ To test if it all works as expected,"
