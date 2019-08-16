@@ -37,6 +37,7 @@ BINDIR=$(echo "$MMDVM" | sed "s/\/MMDVMHost//")
 CONFIGFILE="MMDVM.ini"
 CONFIGDIR="/etc/"
 FILESDIR="/usr/local/etc/"
+FILESDIRPHP="/var/www/dashboard/mmdvmhost/"
 SYSTEMCTL="systemctl daemon-reload"
 MMDVMSTOP="service mmdvmhost stop"
 MMDVMSTART="service mmdvmhost start"
@@ -82,7 +83,7 @@ helpfiles () {
     cp $DIR/stripped.csv $FILESDIR
     rm -f /var/www/dashboard/mmdvmhost/lh_nextion.php
     echo "+ Copying last heard code"
-    cp %DIR/lh_nextion.php /var/www/dashboard/mmdvmhost
+    cp %DIR/lh_nextion.php $FILESDIRPHP
 }
 herstart () {
     echo -e "\n+ To test if it all works as expected,"
