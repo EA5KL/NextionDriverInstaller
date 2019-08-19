@@ -18,6 +18,11 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
+echo "+ Getting cURL library ..."
+cd /tmp
+sudo apt-get update
+sudo apt-get install libcurl4-openssl-dev
+
 echo "+ Getting NextionDriver ..."
 cd /tmp
 rm -rf /tmp/NextionDriver
