@@ -27,7 +27,7 @@ sudo rsync -rl --safe-links pi-star@192.168.0.11:/lib/arm-linux-gnueabihf .
 cd /usr/lib
 sudo rsync -rl pi-star@localhost:/usr/lib/arm-linux-gnueabihf .
 cd /usr/local/include
-sudo rsync -rl --safe-links pi@localhost:/usr/include/arm-linux-gnueabihf .
+sudo rsync -rl --safe-links pi-star@localhost:/usr/include/arm-linux-gnueabihf .
 
 echo "+ Getting NextionDriver ..."
 cd /tmp
