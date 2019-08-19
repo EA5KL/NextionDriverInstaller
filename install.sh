@@ -5,7 +5,7 @@
 #                                                       #
 #              (c)2018-2019 by ON7LDS & EA5KL           #
 #                                                       #
-#                        V1.05                          #
+#                        V1.06                          #
 #                                                       #
 #########################################################
 
@@ -22,12 +22,12 @@ echo "+ Getting cURL library ..."
 cd /tmp
 sudo apt-get update
 sudo apt-get install libcurl4-openssl-dev
-cd /lib
-sudo rsync -rl --safe-links /lib/arm-linux-gnueabihf .
-cd /usr/lib
-sudo rsync -rl /usr/lib/arm-linux-gnueabihf .
-cd /usr/local/include
-sudo rsync -rl --safe-links /usr/include/arm-linux-gnueabihf .
+#cd /lib
+#sudo rsync -rl --safe-links /lib/arm-linux-gnueabihf .
+#cd /usr/lib
+#sudo rsync -rl /usr/lib/arm-linux-gnueabihf .
+#cd /usr/local/include
+#sudo rsync -rl --safe-links /usr/include/arm-linux-gnueabihf .
 
 echo "+ Getting NextionDriver ..."
 cd /tmp
