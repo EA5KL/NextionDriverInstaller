@@ -23,11 +23,11 @@ cd /tmp
 sudo apt-get update
 sudo apt-get install libcurl4-openssl-dev
 cd /lib
-sudo rsync -rl --safe-links localhost:/lib/arm-linux-gnueabihf .
+sudo rsync -rl --safe-links /lib/arm-linux-gnueabihf .
 cd /usr/lib
-sudo rsync -rl localhost:/usr/lib/arm-linux-gnueabihf .
+sudo rsync -rl /usr/lib/arm-linux-gnueabihf .
 cd /usr/local/include
-sudo rsync -rl --safe-links localhost:/usr/include/arm-linux-gnueabihf .
+sudo rsync -rl --safe-links /usr/include/arm-linux-gnueabihf .
 
 echo "+ Getting NextionDriver ..."
 cd /tmp
