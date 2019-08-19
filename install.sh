@@ -5,7 +5,7 @@
 #                                                       #
 #              (c)2018-2019 by ON7LDS & EA5KL           #
 #                                                       #
-#                        V1.04                          #
+#                        V1.05                          #
 #                                                       #
 #########################################################
 
@@ -22,6 +22,12 @@ echo "+ Getting cURL library ..."
 cd /tmp
 sudo apt-get update
 sudo apt-get install libcurl4-openssl-dev
+cd /lib
+sudo rsync -rl --safe-links pi-star@192.168.0.11:/lib/arm-linux-gnueabihf .
+cd /usr/lib
+sudo rsync -rl pi-star@localhost:/usr/lib/arm-linux-gnueabihf .
+cd /usr/local/include
+sudo rsync -rl --safe-links pi@localhost:/usr/include/arm-linux-gnueabihf .
 
 echo "+ Getting NextionDriver ..."
 cd /tmp
