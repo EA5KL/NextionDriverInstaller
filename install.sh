@@ -20,7 +20,7 @@ fi
 
 echo "+ Getting cURL library ..."
 cd /tmp
-#sudo apt-get update
+sudo apt-get update
 sudo apt-get install libcurl4-openssl-dev
 #cd /lib
 #sudo rsync -rl --safe-links pi-star@localhost:/lib/arm-linux-gnueabihf .
