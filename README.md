@@ -61,7 +61,7 @@ cd /tmp
 
 get the software
 ```
-git clone https://github.com/ElGamal/NextionDriverInstaller.git
+git clone https://github.com/EA5KL/NextionDriverInstaller.git
 ```
 
 go !
