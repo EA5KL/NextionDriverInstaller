@@ -5,7 +5,7 @@
 #                                                       #
 #              (c)2018-2019 by ON7LDS & EA5KL           #
 #                                                       #
-#                        V1.08                          #
+#                        V1.09                          #
 #                                                       #
 #########################################################
 
@@ -32,7 +32,7 @@ sudo apt-get install libcurl4-openssl-dev
 echo "+ Getting NextionDriver ..."
 cd /tmp
 rm -rf /tmp/NextionDriver
-git clone https://github.com/EA5KL/NextionDriver.git;
+git clone https://github.com/ElGamal/NextionDriver.git;
 cd /tmp/NextionDriver 2>/dev/null
 if [ "$(pwd)" != "/tmp/NextionDriver" ]; then echo "- Getting NextionDriver failed. Cannot continue."; exit; fi
 
@@ -95,6 +95,12 @@ helpfiles () {
     rm -f /var/www/dashboard/mmdvmhost/lh_nextion.php
     echo "+ Copying last heard code"
     cp /tmp/NextionDriver/lh_nextion.php $FILESDIRPHP
+    rm -f /var/www/dashboard/mmdvmhost/rptInfo_nextion.php
+    echo "+ Copying screen information code"
+    cp /tmp/NextionDriver/rptInfo_nextion.php $FILESDIRPHP
+    rm -f /var/www/dashboard/mmdvmhost/sysInfo_nextion.php
+    echo "+ Copying system information code"
+    cp /tmp/NextionDriver/sysInfo_nextion.php $FILESDIRPHP
 }
 herstart () {
     echo -e "\n+ To test if it all works as expected,"
